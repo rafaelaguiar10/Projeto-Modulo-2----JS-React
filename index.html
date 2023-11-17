@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <script src="./script.js" async></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  
+  <body>
+    <div class="todo-list">
+      <h1>Todo List</h1>
+
+      <div>
+        <input type="text" id="novoItem"><button id="adicionarButton" onclick="createTodoItem()">Adicionar</button>
+        <input type="text" id="delItem"><button id="adicionarButton" onclick="deleteTodoItems()">Remover Item</button>
+      </div>
+
+      <div id="items">
+        <ul id="lista">
+        </ul>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        loadTodoItems()
+    </script>
+
+
+  </body>
+</html>
